@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "lastUpdate": "2026-02-04",
+  "bugs": [
+    {"code": "TC-PROJ-003", "cat": "PROJ", "gid": null, "first": "2026-01-27", "last": "2026-02-03"},
+    {"code": "TC-PROJ-005", "cat": "PROJ", "gid": null, "first": "2026-01-27", "last": "2026-02-03"},
+    {"code": "TC-LOGIN-008", "cat": "LOGIN", "gid": "1212940571170409", "first": "2026-01-27", "last": "2026-02-04"},
+    {"code": "TC-PROJ-004", "cat": "PROJ", "gid": "1213005322160858", "first": "2026-01-27", "last": "2026-02-04"},
+    {"code": "TC-PROJ-002", "cat": "PROJ", "gid": "1213005332916482", "first": "2026-01-27", "last": "2026-02-04"},
+    {"code": "TC-NAV-004", "cat": "NAV", "gid": "1212968738656241", "first": "2026-01-28", "last": "2026-02-03"},
+    {"code": "TC-NAV-007", "cat": "NAV", "gid": "1212974950861982", "first": "2026-01-28", "last": "2026-01-28"},
+    {"code": "TC-IMPORT-009", "cat": "IMPORT", "gid": "1213024800516060", "first": "2026-01-29", "last": "2026-01-29"},
+    {"code": "TC-IMPORT-012", "cat": "IMPORT", "gid": "1213098269468082", "first": "2026-02-03", "last": "2026-02-04"}
+  ]
+}

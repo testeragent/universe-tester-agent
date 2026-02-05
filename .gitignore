@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Database
+*.db
+*.db-journal
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Session state (regenerated)
+session-state.json
+
+# Test queue (regenerated)
+tests-queue.json
+
+# Stop signal
+monitor/stop-signal.txt
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*~

@@ -1,0 +1,18 @@
+{
+  "sheetId": "1wFlv0KrT4JNTXAnGO4mwtDXPkh2dIxQzfM0VCXxA1jA",
+  "sheetTitle": "Testy_Lista",
+  "sheetUrl": "https://docs.google.com/spreadsheets/d/1wFlv0KrT4JNTXAnGO4mwtDXPkh2dIxQzfM0VCXxA1jA",
+  "columns": {
+    "id": "A",
+    "category": "B",
+    "name": "C",
+    "steps": "D",
+    "requirements": "E",
+    "expected": "F",
+    "status": "G",
+    "result": "H",
+    "testDate": "I"
+  },
+  "headerRow": 1,
+  "dataStartRow": 2
+}
