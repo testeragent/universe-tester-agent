@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Universe MapMaker - Test Monitor</title>
+    <style>
+        body { font-family: sans-serif; background: #1a1a2e; color: #eee; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { color: #e94560; }
+        .card { background: #16213e; padding: 20px; border-radius: 12px; margin: 10px 0; }
+        .passed { color: #00ff88; }
+        .failed { color: #ff4757; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Universe MapMaker - Test Monitor</h1>
+        <p>Arkusz Google: <a href="#" id="sheetLink">Ladowanie...</a></p>
+        <div class="card"><h3>Status</h3><p id="status">Oczekiwanie na agenta...</p></div>
+        <div class="card"><h3>Podsumowanie</h3>
+            <p>Total: <span id="total">0</span> | 
+            <span class="passed">Passed: <span id="passed">0</span></span> | 
+            <span class="failed">Failed: <span id="failed">0</span></span></p>
+        </div>
+        <div class="card"><h3>Testy</h3><div id="tests">Brak testow</div></div>
+    </div>
+    <script src="tests-data.js"></script>
+    <script>
+        function update() {
+            if (typeof testData === 'undefined') return;
+            document.getElementById('sheetLink').textContent = testData.sheetTitle || 'Brak';
+            document.getElementById('sheetLink').href = testData.sheetUrl || '#';
+            document.getElementById('status').textContent = testData.agentStatus?.currentAction || 'Oczekiwanie...';
+            document.getElementById('total').textContent = testData.summary?.total || 0;
+            document.getElementById('passed').textContent = testData.summary?.passed || 0;
+            document.getElementById('failed').textContent = testData.summary?.failed || 0;
+            if (testData.tests?.length) {
+                document.getElementById('tests').innerHTML = testData.tests.map(t => 
+                    '<p>' + t.id + ': ' + t.name + ' - <span class="' + t.status + '">' + t.status + '</span></p>'
+                ).join('');
+            }
+        }
+        update();
+        setInterval(update, 2000);
+    </script>
+</body>
+</html>
